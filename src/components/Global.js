@@ -17,7 +17,7 @@ body{
     line-height: 25px;
     color: #333D4B;
     background-color: #FEFCF7;
-    padding: 20px 40px;
+    padding: 30px 40px;
 }
 
 ul {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-  padding: 1rem 0;
+  padding-bottom: 1.5rem;
   .coffeeheader {
     display: flex;
     justify-content: space-between;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   padding-bottom: 1.5rem;
+  padding: 30px 40px;
   .coffeeheader {
     display: flex;
     justify-content: space-between;
@@ -45,12 +46,44 @@ export const StyledHeader = styled.header`
 
     a {
       color: #83888f;
+      text-transform: uppercase;
     }
   }
 
   @media screen and (max-width: 600px) {
     ul {
-      display: none;
+      list-style: none;
+      width: 100%;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: "Fraunces", serif;
+      padding: 4rem 0;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 50px;
+      bottom: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(254, 252, 247, 0.504981) 0%,
+        #fefcf7 55.94%
+      );
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      li {
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        padding-top: 2rem;
+        a {
+          font-size: 24px;
+          font-weight: 900;
+          line-height: 32px;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #333d4b;
+          transform: matrix(1, 0, 0, -1, 0, 0);
+          text-transform: none;
+        }
+      }
     }
     .hamburger-list {
       width: 2rem;

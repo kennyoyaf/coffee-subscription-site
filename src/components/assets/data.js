@@ -95,4 +95,54 @@ const country = [
   },
 ];
 
-export { collection, box, list, country };
+const delivery = [
+  {
+    question: "How do you drink your coffee?",
+    heading1: "Capsule",
+    option1: "Compatible with Nespresso systems and similar brewers",
+    heading2: "Filter",
+    option2: "For pour over or drip methods like Aeropress, Chemex, and V60",
+    heading3: "Espresso",
+    option3:
+      "Dense and finely ground beans for an intense, flavorful experience",
+  },
+  {
+    question: "What type of coffee?",
+    heading1: "Single Origin",
+    option1: "Distinct, high quality coffee from a specific family-owned farm",
+    heading2: "Decaf",
+    option2: "Just like regular coffee, except the caffeine has been removed",
+    heading3: "Blended",
+    option3:
+      "Combination of two or three dark roasted beans of organic coffees",
+  },
+  {
+    question: "How much would you like?",
+    heading1: "250g",
+    option1: "Perfect for the solo drinker. Yields about 12 delicious cups.",
+    heading2: "500g",
+    option2: "Perfect option for a couple. Yields about 40 delectable cups.",
+    heading3: "1000g",
+    option3: "Perfect for offices and events. Yields about 90 delightful cups.",
+  },
+  {
+    question: "Want us to grind them?",
+    heading1: "Wholebean",
+    option1: "Best choice if you cherish the full sensory experience",
+    heading2: "Filter",
+    option2: "For drip or pour-over coffee methods such as V60 or Aeropress",
+    heading3: "Cafetiére",
+    option3: "Course ground beans specially suited for french press coffee",
+  },
+  {
+    question: "How often should we deliver?",
+    heading1: "Every week",
+    option1: "$7.20 per shipment. Includes free first-class shipping.",
+    heading2: "Every 2 weeks",
+    option2: "$9.60 per shipment. Includes free priority shipping.",
+    heading3: "Every month",
+    option3: "$12.00 per shipment. Includes free priority shipping.",
+  },
+];
+
+export { collection, box, list, country, delivery };

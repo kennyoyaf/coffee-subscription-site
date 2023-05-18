@@ -12,9 +12,9 @@ function App() {
       <GlobalStyles />
       <Header />
       <Routes>
-        <Route path="/subscribe" element={<Subscribe />} exact />
         <Route path="/" element={<Home />} exact />
-        <Route path="/About" element={<About />} exact />
+        <Route path="/about" element={<About />} exact />
+        <Route path="/subscribe" element={<Subscribe />} exact />
       </Routes>
       <Footer />
     </>

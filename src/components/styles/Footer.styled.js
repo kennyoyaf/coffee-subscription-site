@@ -6,6 +6,7 @@ export const Footerstyled = styled.footer`
   flex-direction: column;
   align-items: center;
   padding: 3rem;
+  margin: 30px 40px;
 
   .footer-title {
     padding-bottom: 1.5rem;
@@ -77,7 +78,7 @@ export const Footerstyled = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    margin: 40px;
     ul {
       padding: 0;
       li {

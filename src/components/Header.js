@@ -1,9 +1,27 @@
+import React from "react";
+import { useState } from "react";
 import { StyledHeader } from "./styles/Header.styled";
 import Combinedshape from "./assets/Combined-Shape.svg";
 import Hamburger from "./assets/Hamburger.svg";
+import Cancel from "../components/assets/Cancel.svg";
 import coffeeroasters from "./assets/coffeeroasters.png";
+import { useEffect } from "react";
 
 export default function Header() {
+  const [showLinks, setShowLinks] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", changeWidth);
+
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
   return (
     <StyledHeader>
       <div className="coffeeheader">
@@ -25,32 +43,53 @@ export default function Header() {
           <img src={coffeeroasters} alt="coffeeroasters" />
         </div>
         <div className="hamburger-list">
-          <svg
-            className="Hamburger"
-            width="16"
-            height="15"
-            viewBox="0 0 16 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0 1.5C0 0.671573 0.671573 0 1.5 0H14.5C15.3284 0 16 0.671573 16 1.5C16 2.32843 15.3284 3 14.5 3H1.5C0.671573 3 0 2.32843 0 1.5ZM0 7.5C0 6.67157 0.671573 6 1.5 6H14.5C15.3284 6 16 6.67157 16 7.5C16 8.32843 15.3284 9 14.5 9H1.5C0.671573 9 0 8.32843 0 7.5ZM1.5 12C0.671573 12 0 12.6716 0 13.5C0 14.3284 0.671573 15 1.5 15H14.5C15.3284 15 16 14.3284 16 13.5C16 12.6716 15.3284 12 14.5 12H1.5Z"
-              fill="#333D4B"
-            />
-          </svg>
-          <ul>
-            <li>
-              <a href="/">HOME</a>
-            </li>
-            <li>
-              <a href="/About">ABOUT US</a>
-            </li>
-            <li>
-              <a href="/Subcribe">CREATE YOUR PLAN</a>
-            </li>
-          </ul>
+          <div onClick={() => setShowLinks(!showLinks)} className="Hamburger">
+            {showLinks ? (
+              <svg
+                width="14"
+                height="13"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.46447 0.84266C2.87868 0.256874 1.92893 0.256874 1.34315 0.84266C0.757362 1.42845 0.757362 2.37819 1.34315 2.96398L4.87868 6.49951L1.34315 10.035C0.757362 10.6208 0.757362 11.5706 1.34315 12.1564C1.92893 12.7422 2.87868 12.7422 3.46447 12.1564L7 8.62083L10.5355 12.1564C11.1213 12.7422 12.0711 12.7422 12.6569 12.1564C13.2426 11.5706 13.2426 10.6208 12.6569 10.035L9.12132 6.49951L12.6569 2.96398C13.2426 2.37819 13.2426 1.42845 12.6569 0.842661C12.0711 0.256874 11.1213 0.256874 10.5355 0.842661L7 4.37819L3.46447 0.84266Z"
+                  fill="#333D4B"
+                />
+              </svg>
+            ) : (
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 1.5C0 0.671573 0.671573 0 1.5 0H14.5C15.3284 0 16 0.671573 16 1.5C16 2.32843 15.3284 3 14.5 3H1.5C0.671573 3 0 2.32843 0 1.5ZM0 7.5C0 6.67157 0.671573 6 1.5 6H14.5C15.3284 6 16 6.67157 16 7.5C16 8.32843 15.3284 9 14.5 9H1.5C0.671573 9 0 8.32843 0 7.5ZM1.5 12C0.671573 12 0 12.6716 0 13.5C0 14.3284 0.671573 15 1.5 15H14.5C15.3284 15 16 14.3284 16 13.5C16 12.6716 15.3284 12 14.5 12H1.5Z"
+                  fill="#333D4B"
+                />
+              </svg>
+            )}
+          </div>
+
+          {(showLinks || screenWidth > 600) && (
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/about">About Us</a>
+              </li>
+              <li>
+                <a href="/subscribe">Create Your Plan</a>
+              </li>
+            </ul>
+          )}
         </div>
       </div>
     </StyledHeader>

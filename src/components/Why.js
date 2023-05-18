@@ -1,7 +1,6 @@
 import React from "react";
-import Choose from "./Choose";
-import { box } from "./assets/data";
 import { Whystyled } from "./styles/Why.styled";
+import Separate from "./Separate";
 
 const Why = () => {
   return (
@@ -12,9 +11,7 @@ const Why = () => {
         featured in our range. This means working closely with the best coffee
         growers to give you a more impactful experience on every level.
       </p>
-      {box.map((item, i) => (
-        <Choose key={i} {...item} />
-      ))}
+      <Separate />
     </Whystyled>
   );
 };

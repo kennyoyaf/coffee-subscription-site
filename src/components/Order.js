@@ -1,13 +1,12 @@
 import React from "react";
-import { list } from "./assets/data";
-import Works from "./Works";
 import { Orderstyled } from "./styles/Order.styled";
 import line from "./assets/line.svg";
+import Listen from "./Listen";
 
-const Order = () => {
+const Order = ({ button, bgcolor, h5 }) => {
   return (
-    <Orderstyled>
-      <h2>How it works</h2>
+    <Orderstyled bgcolor={bgcolor}>
+      {h5 ? <h5>{h5}</h5> : null}
       <svg
         width="497"
         height="31"
@@ -41,10 +40,8 @@ const Order = () => {
           stroke-width="2"
         />
       </svg>
-      {list.map((item, i) => (
-        <Works key={i} {...item} />
-      ))}
-      <button>Create your plan</button>
+      <Listen />
+      {button ? <button>{button}</button> : null}
     </Orderstyled>
   );
 };

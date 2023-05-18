@@ -2,10 +2,9 @@ import React from "react";
 import Jumbotron from "../components/Jumbotron";
 import Why from "../components/Why";
 import Order from "../components/Order";
-import SingleCollection from "../components/SingleCollection";
 import { Container } from "../components/styles/Container.styled";
-import { collection } from "../components/assets/data";
 import Background from "../components/assets/Background-1.jpg";
+import Single from "../components/Single";
 
 const Home = () => {
   return (
@@ -19,11 +18,10 @@ const Home = () => {
           button="Create your plan"
           background={Background}
         />
-        {collection.map((item, i) => (
-          <SingleCollection key={i} {...item} />
-        ))}
+        <h3>our collection</h3>
+        <Single />
         <Why />
-        <Order />
+        <Order h5="How it works" button="Create your plan" />
       </Container>
     </>
   );

@@ -4,7 +4,9 @@ import { Commitstyled } from "../styles/Commit.styled";
 const commit = () => {
   return (
     <Commitstyled>
-      <img src={commitment} alt="commitment" />
+      <div className="img">
+        <img src={commitment} alt="commitment" />
+      </div>
       <div className="text">
         <h4>Our commitment</h4>
         <p>

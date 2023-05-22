@@ -7,9 +7,11 @@ const Headquarter = () => {
   return (
     <Headquarterstyled>
       <h3>Our headquarters</h3>
-      {country.map((item, i) => (
-        <Country key={i} {...item} />
-      ))}
+      <div className="country">
+        {country.map((item, i) => (
+          <Country key={i} {...item} />
+        ))}
+      </div>
     </Headquarterstyled>
   );
 };

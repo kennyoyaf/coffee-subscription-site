@@ -30,10 +30,10 @@ const Footer = () => {
           <a href="/">HOME</a>
         </li>
         <li>
-          <a href="/About">ABOUT US</a>
+          <a href="/about">ABOUT US</a>
         </li>
         <li>
-          <a href="/Subcribe">CREATE YOUR PLAN</a>
+          <a href="/subscribe">CREATE YOUR PLAN</a>
         </li>
       </ul>
       <div className="footer-social">

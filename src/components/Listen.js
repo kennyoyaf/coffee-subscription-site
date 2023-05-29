@@ -3,11 +3,11 @@ import { Listenstyled } from "./styles/Listen.styled";
 import { list } from "./assets/data";
 import Works from "../components/Works";
 
-const Listen = () => {
+const Listen = ({ textcolor }) => {
   return (
     <Listenstyled>
       {list.map((item, i) => (
-        <Works key={i} {...item} textcolor="#ffffff" />
+        <Works key={i} {...item} textcolor={textcolor} />
       ))}
     </Listenstyled>
   );

@@ -58,10 +58,12 @@ export const JumbotronStyled = styled.section`
   }
 
   @media screen and (min-width: 600px) and (max-width: 1024px) {
+    background-image: url(${({ tabbackground }) => tabbackground});
     align-items: flex-start;
     width: 90%;
-    background-size: 100% 100%, contain;
-    height: 654px;
+    background-size: 100% 454px, contain;
+    background-repeat: no-repeat;
+    height: 454px;
     margin-bottom: 7rem;
     h2 {
       font-size: 48px;
@@ -70,7 +72,7 @@ export const JumbotronStyled = styled.section`
       letter-spacing: 0px;
       text-align: left;
       margin-left: 3rem;
-      width: 65%;
+      width: 50%;
     }
 
     p {
@@ -79,7 +81,7 @@ export const JumbotronStyled = styled.section`
       line-height: 25px;
       letter-spacing: 0px;
       text-align: left;
-      width: 80%;
+      width: 60%;
       margin-left: 3rem;
     }
 
@@ -89,10 +91,14 @@ export const JumbotronStyled = styled.section`
   }
 
   @media screen and (min-width: 1024px) {
+    background-image: url(${({ lgbackground }) => lgbackground});
     align-items: flex-start;
     width: 95%;
-    background-size: 100%, contain;
-    height: 1298px;
+    height: 550px;
+    background-size: 100% 550px, contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 6rem;
     h2 {
       font-size: 72px;
       font-weight: 900;
@@ -101,7 +107,6 @@ export const JumbotronStyled = styled.section`
       text-align: left;
       margin-left: 3rem;
       width: 50%;
-      padding-bottom: 3rem;
     }
 
     p {
@@ -112,7 +117,7 @@ export const JumbotronStyled = styled.section`
       text-align: left;
       width: 35%;
       margin-left: 3rem;
-      padding-bottom: 3rem;
+      padding-bottom: 1rem;
     }
 
     button {

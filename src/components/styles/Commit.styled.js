@@ -35,15 +35,20 @@ export const Commitstyled = styled.section`
     justify-content: space-evenly;
     margin-bottom: 15rem;
 
+    img {
+      width: 100%;
+    }
     .text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
       h4 {
         text-align: left;
-        padding-left: 2.5rem;
       }
       p {
         text-align: left;
         width: 80%;
-        margin: 0 auto;
       }
     }
   }
@@ -51,25 +56,26 @@ export const Commitstyled = styled.section`
   @media screen and (min-width: 1024px) {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     margin-bottom: 15rem;
     .img {
-      width: 50%;
+      width: 40%;
+      border-radius: 10px;
     }
     img {
       width: 100%;
       object-fit: contain;
     }
     .text {
-      width: 50%;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       h4 {
         text-align: left;
-        padding-left: calc(3rem + 0.5rem);
       }
       p {
         text-align: left;
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
       }
     }
   }

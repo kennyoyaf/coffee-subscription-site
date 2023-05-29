@@ -7,7 +7,7 @@ export const Orderstyled = styled.section`
   align-items: center;
   border-radius: 10px;
   padding: 4rem 2rem;
-  svg {
+  img {
     width: 100%;
     display: none;
   }
@@ -47,7 +47,7 @@ export const Orderstyled = styled.section`
   @media screen and (min-width: 600px) and (max-width: 1023px) {
     margin: 0 auto;
     align-items: flex-start;
-    svg {
+    img {
       display: block;
       width: 75%;
     }
@@ -64,7 +64,7 @@ export const Orderstyled = styled.section`
     margin: 0 auto;
     align-items: flex-start;
     width: 95%;
-    svg {
+    img {
       display: block;
       width: 75%;
     }

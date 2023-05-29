@@ -16,7 +16,7 @@ export const Workstyled = styled.div`
     padding-top: 3rem;
   }
   h4 {
-    color: ${({ textcolor }) => (textcolor ? textcolor : "#2C343E")};
+    color: ${({ textcolor }) => (textcolor ? textcolor : "#333D4B")};
     font-family: "Fraunces", serif;
     font-size: 28px;
     font-weight: 900;
@@ -26,7 +26,7 @@ export const Workstyled = styled.div`
     padding-bottom: 1.5rem;
   }
   p {
-    color: ${({ textcolor }) => textcolor || "#2C343E"};
+    color: ${({ textcolor }) => textcolor || "#333D4B"};
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;

@@ -3,7 +3,10 @@ import Jumbotron from "../components/Jumbotron";
 import Why from "../components/Why";
 import Order from "../components/Order";
 import { Container } from "../components/styles/Container.styled";
+import lgbackground from "../components/assets/Homelgbackground.png";
 import Background from "../components/assets/Background-1.jpg";
+import line from "../components/assets/line.svg";
+import tabbackground from "../components/assets/Hometabbackground.jpg";
 import Single from "../components/Single";
 
 const Home = () => {
@@ -17,6 +20,9 @@ const Home = () => {
           your door, at your schedule."
           button="Create your plan"
           background={Background}
+          lgbackground={lgbackground}
+          tabbackground={tabbackground}
+          img={line}
         />
         <h3>our collection</h3>
         <Single />

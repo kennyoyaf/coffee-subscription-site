@@ -50,7 +50,7 @@ export const Footerstyled = styled.footer`
       align-items: center;
     }
     a:hover {
-      color: #fdd6ba;
+      background-color: #fdd6ba;
     }
   }
 

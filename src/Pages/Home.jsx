@@ -22,7 +22,6 @@ const Home = () => {
           background={Background}
           lgbackground={lgbackground}
           tabbackground={tabbackground}
-          img={line}
         />
         <h3>our collection</h3>
         <Single />

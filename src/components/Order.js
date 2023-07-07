@@ -2,12 +2,13 @@ import React from "react";
 import { Orderstyled } from "./styles/Order.styled";
 import line from "./assets/line.svg";
 import Listen from "./Listen";
+import CircleAndLine from "./CircleAndLine";
 
-const Order = ({ button, bgcolor, h5, textcolor, img }) => {
+const Order = ({ button, bgcolor, h5, textcolor }) => {
   return (
-    <Orderstyled bgcolor={bgcolor} img={img}>
+    <Orderstyled bgcolor={bgcolor}>
       {h5 ? <h5>{h5}</h5> : null}
-      {img ? <img>{img}</img> : null}
+      <CircleAndLine />
       <Listen textcolor={textcolor} />
       {button ? <button>{button}</button> : null}
     </Orderstyled>

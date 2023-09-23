@@ -72,12 +72,6 @@ frontend: React, Styled-component, React-icon
 ## Screenshots
 
 ![Coffee-Subscription](https://github.com/kennyoyaf/coffee-subscription-site/blob/main/src/components/assets/a.PNG?raw=true)
-![Coffee-Subscription](https://github.com/kennyoyaf/coffee-subscription-site/blob/main/src/components/assets/b.PNG?raw=true)
 ![Coffee-Subscription](https://github.com/kennyoyaf/coffee-subscription-site/blob/main/src/components/assets/c.PNG?raw=true)
-![Coffee-Subscription](https://github.com/kennyoyaf/coffee-subscription-site/blob/main/src/components/assets/d.PNG?raw=true)
 ![Coffee-Subscription](https://github.com/kennyoyaf/coffee-subscription-site/blob/main/src/components/assets/e.PNG?raw=true)
-![Coffee-Subscription](https://github.com/kennyoyaf/coffee-subscription-site/blob/main/src/components/assets/f.PNG?raw=true)
-![Coffee-Subscription](https://github.com/kennyoyaf/coffee-subscription-site/blob/main/src/components/assets/g.PNG?raw=true)
-![Coffee-Subscription](https://github.com/kennyoyaf/coffee-subscription-site/blob/main/src/components/assets/h.PNG?raw=true)
-![Coffee-Subscription](https://github.com/kennyoyaf/coffee-subscription-site/blob/main/src/components/assets/i.PNG?raw=true)
 

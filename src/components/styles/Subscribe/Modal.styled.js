@@ -108,6 +108,7 @@ export const Modalstyled = styled.div`
     display: flex;
     justify-content: center;
     .checkout-btn {
+      cursor: pointer;
       width: 100%;
       background-color: #0e8784;
       border: none;

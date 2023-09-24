@@ -1,8 +1,8 @@
-import React from "react";
-import { Orderstyled } from "./styles/Order.styled";
-import line from "./assets/line.svg";
-import Listen from "./Listen";
-import CircleAndLine from "./CircleAndLine";
+import React from "react"
+import { Orderstyled } from "./styles/Order.styled"
+import line from "./assets/line.svg"
+import Listen from "./Listen"
+import CircleAndLine from "./CircleAndLine"
 
 const Order = ({ button, bgcolor, h5, textcolor }) => {
   return (
@@ -12,7 +12,7 @@ const Order = ({ button, bgcolor, h5, textcolor }) => {
       <Listen textcolor={textcolor} />
       {button ? <button>{button}</button> : null}
     </Orderstyled>
-  );
-};
+  )
+}
 
-export default Order;
+export default Order

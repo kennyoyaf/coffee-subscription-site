@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const OftenDeliverstyled = styled.div`
   margin: 5rem 0;
@@ -9,6 +9,7 @@ export const OftenDeliverstyled = styled.div`
     padding-bottom: 1rem;
     width: 100%;
     position: relative;
+    cursor: pointer;
     h4 {
       font-family: "Fraunces", serif;
       font-size: 24px;
@@ -106,4 +107,4 @@ export const OftenDeliverstyled = styled.div`
       }
     }
   }
-`;
+`

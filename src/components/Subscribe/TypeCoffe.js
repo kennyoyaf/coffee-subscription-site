@@ -1,24 +1,24 @@
-import React from "react";
-import { useState } from "react";
-import { boxData } from "../assets/data";
-import Box from "./Box";
-import { TypeCoffestyled } from "../styles/Subscribe/TypeCoffe.styled";
-import Arrowup from "../assets/arrow up.svg";
-import Arrowdown from "../assets/arrow-down.png";
+import React from "react"
+import { useState } from "react"
+import { boxData } from "../assets/data"
+import Box from "./Box"
+import { TypeCoffestyled } from "../styles/Subscribe/TypeCoffe.styled"
+import Arrowup from "../assets/arrow up.svg"
+import Arrowdown from "../assets/arrow-down.png"
 
 const TypeCoffe = ({ handleData }) => {
-  const handleClick = (data) => {
-    handleData(data, "second");
-  };
+  const handleClick = data => {
+    handleData(data, "second")
+  }
 
-  const [showInfo, setShowInfo] = useState(false);
+  const [showInfo, setShowInfo] = useState(false)
 
   return (
     <TypeCoffestyled>
       <div
         className="head-text"
         onClick={() => {
-          setShowInfo(!showInfo);
+          setShowInfo(!showInfo)
         }}
       >
         <h4 id="two">What type of coffee?</h4>
@@ -49,7 +49,7 @@ const TypeCoffe = ({ handleData }) => {
         </div>
       )}
     </TypeCoffestyled>
-  );
-};
+  )
+}
 
-export default TypeCoffe;
+export default TypeCoffe

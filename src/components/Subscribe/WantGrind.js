@@ -1,23 +1,23 @@
-import React from "react";
-import { boxData } from "../assets/data";
-import Box from "./Box";
-import { WantGrindstyled } from "../styles/Subscribe/WantGrind.styled";
-import { useState } from "react";
-import Arrowup from "../assets/arrow up.svg";
-import Arrowdown from "../assets/arrow-down.png";
+import React from "react"
+import { boxData } from "../assets/data"
+import Box from "./Box"
+import { WantGrindstyled } from "../styles/Subscribe/WantGrind.styled"
+import { useState } from "react"
+import Arrowup from "../assets/arrow up.svg"
+import Arrowdown from "../assets/arrow-down.png"
 
 const WantGrind = ({ handleData }) => {
-  const handleClick = (data) => {
-    handleData(data, "fourth");
-  };
+  const handleClick = data => {
+    handleData(data, "fourth")
+  }
 
-  const [showInfo, setShowInfo] = useState(false);
+  const [showInfo, setShowInfo] = useState(false)
   return (
     <WantGrindstyled>
       <div
         className="head-text"
         onClick={() => {
-          setShowInfo(!showInfo);
+          setShowInfo(!showInfo)
         }}
       >
         <h4 id="four">Want us to grind them?</h4>
@@ -48,7 +48,7 @@ const WantGrind = ({ handleData }) => {
         </div>
       )}
     </WantGrindstyled>
-  );
-};
+  )
+}
 
-export default WantGrind;
+export default WantGrind

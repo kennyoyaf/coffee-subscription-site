@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Boxstyled = styled.div`
+  cursor: pointer;
   .content {
     background-color: #f4f1eb;
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 8px;
-
     h6 {
       font-family: "Fraunces", serif;
       font-size: 24px;
@@ -57,4 +57,4 @@ export const Boxstyled = styled.div`
       }
     }
   }
-`;
+`

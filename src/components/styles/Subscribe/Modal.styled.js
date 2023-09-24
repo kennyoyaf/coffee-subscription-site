@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Modalstyled = styled.div`
   .modal {
@@ -95,6 +95,7 @@ export const Modalstyled = styled.div`
       letter-spacing: 0px;
       text-align: center;
       border: none;
+      cursor: pointer;
     }
     .btn:hover {
       background-color: #66d2cf;
@@ -185,4 +186,4 @@ export const Modalstyled = styled.div`
       padding-right: 3rem;
     }
   }
-`;
+`

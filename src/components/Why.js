@@ -1,6 +1,6 @@
-import React from "react";
-import { Whystyled } from "./styles/Why.styled";
-import Separate from "./Separate";
+import React from "react"
+import { Whystyled } from "./styles/Why.styled"
+import Separate from "./Separate"
 
 const Why = () => {
   return (
@@ -13,7 +13,7 @@ const Why = () => {
       </p>
       <Separate />
     </Whystyled>
-  );
-};
+  )
+}
 
-export default Why;
+export default Why

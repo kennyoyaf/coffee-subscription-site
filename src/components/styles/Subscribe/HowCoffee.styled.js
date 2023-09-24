@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const HowCoffeestyled = styled.div`
   margin: 5rem 0;
@@ -9,6 +9,7 @@ export const HowCoffeestyled = styled.div`
     padding-bottom: 1rem;
     width: 100%;
     position: relative;
+    cursor: pointer;
     h4 {
       font-family: "Fraunces", serif;
       font-size: 24px;
@@ -80,6 +81,7 @@ export const HowCoffeestyled = styled.div`
       column-gap: 1rem;
       .content {
         padding: 2rem 1rem;
+        cursor: pointer;
         h6 {
           padding-bottom: 1rem;
         }
@@ -106,4 +108,4 @@ export const HowCoffeestyled = styled.div`
       }
     }
   }
-`;
+`

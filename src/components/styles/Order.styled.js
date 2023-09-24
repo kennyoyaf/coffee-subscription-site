@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Orderstyled = styled.section`
   background-color: ${({ bgcolor }) => bgcolor};
@@ -36,6 +36,7 @@ export const Orderstyled = styled.section`
     letter-spacing: 0px;
     text-align: center;
     border: none;
+    cursor: pointer;
     margin-top: 3rem;
     margin-bottom: 5rem;
   }
@@ -76,4 +77,4 @@ export const Orderstyled = styled.section`
       text-align: left;
     }
   }
-`;
+`

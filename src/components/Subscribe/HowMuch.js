@@ -1,23 +1,23 @@
-import React from "react";
-import { boxData } from "../assets/data";
-import { useState } from "react";
-import Box from "./Box";
-import { HowMuchstyled } from "../styles/Subscribe/HowMuch.styled";
-import Arrowup from "../assets/arrow up.svg";
-import Arrowdown from "../assets/arrow-down.png";
+import React from "react"
+import { boxData } from "../assets/data"
+import { useState } from "react"
+import Box from "./Box"
+import { HowMuchstyled } from "../styles/Subscribe/HowMuch.styled"
+import Arrowup from "../assets/arrow up.svg"
+import Arrowdown from "../assets/arrow-down.png"
 
 const HowMuch = ({ handleData }) => {
-  const handleClick = (data) => {
-    handleData(data, "third");
-  };
+  const handleClick = data => {
+    handleData(data, "third")
+  }
 
-  const [showInfo, setShowInfo] = useState(false);
+  const [showInfo, setShowInfo] = useState(false)
   return (
     <HowMuchstyled>
       <div
         className="head-text"
         onClick={() => {
-          setShowInfo(!showInfo);
+          setShowInfo(!showInfo)
         }}
       >
         <h4 id="three">How much would you like?</h4>
@@ -49,7 +49,7 @@ const HowMuch = ({ handleData }) => {
         </div>
       )}
     </HowMuchstyled>
-  );
-};
+  )
+}
 
-export default HowMuch;
+export default HowMuch

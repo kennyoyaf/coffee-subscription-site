@@ -1,23 +1,23 @@
-import React from "react";
-import { boxData } from "../assets/data";
-import { useState } from "react";
-import Box from "./Box";
-import { OftenDeliverstyled } from "../styles/Subscribe/OftenDeliver.styled";
-import Arrowup from "../assets/arrow up.svg";
-import Arrowdown from "../assets/arrow-down.png";
+import React from "react"
+import { boxData } from "../assets/data"
+import { useState } from "react"
+import Box from "./Box"
+import { OftenDeliverstyled } from "../styles/Subscribe/OftenDeliver.styled"
+import Arrowup from "../assets/arrow up.svg"
+import Arrowdown from "../assets/arrow-down.png"
 
 const OftenDeliver = ({ handleData }) => {
-  const handleClick = (data) => {
-    handleData(data, "fifth");
-  };
+  const handleClick = data => {
+    handleData(data, "fifth")
+  }
 
-  const [showInfo, setShowInfo] = useState(false);
+  const [showInfo, setShowInfo] = useState(false)
   return (
     <OftenDeliverstyled>
       <div
         className="head-text"
         onClick={() => {
-          setShowInfo(!showInfo);
+          setShowInfo(!showInfo)
         }}
       >
         <h4 id="five">How often should we deliver?</h4>
@@ -48,7 +48,7 @@ const OftenDeliver = ({ handleData }) => {
         </div>
       )}
     </OftenDeliverstyled>
-  );
-};
+  )
+}
 
-export default OftenDeliver;
+export default OftenDeliver

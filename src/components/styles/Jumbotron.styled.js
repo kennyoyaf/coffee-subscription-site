@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const JumbotronStyled = styled.section`
   background-image: url(${({ background }) => background});
@@ -51,6 +51,7 @@ export const JumbotronStyled = styled.section`
     text-align: center;
     border: none;
     margin-top: 30px;
+    cursor: pointer;
   }
 
   button:hover {
@@ -124,4 +125,4 @@ export const JumbotronStyled = styled.section`
       margin-left: 3rem;
     }
   }
-`;
+`
